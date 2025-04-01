@@ -102,3 +102,62 @@ var_obj.local_variable_demo()
 # Accessing class and instance variables
 print("Class Variable:", VariableExamples.class_variable)
 print("Instance Variable:", var_obj.instance_variable)
+
+
+# ________________________________________Data type examples______________________________________
+class DataTypesDemo:
+    def __init__(self):
+        """Initialize integer, float, string, and boolean variables."""
+        self.decimal_int = 10000  # Decimal integer
+        self.large_int = 9876543210123456789  # Large integer
+        self.binary_int = 0b1010  # Binary (10 in decimal)
+        self.octal_int = 0o12  # Octal (10 in decimal)
+        self.hexadecimal_int = 0xA  # Hexadecimal (10 in decimal)
+        
+        self.float_num = 123.456  # Float number
+        self.scientific_notation = 1.23e3  # Scientific notation (1230.0)
+        
+        self.string_data = "Hello, Python!"  # String type
+        self.boolean_true = True  # Boolean type
+        self.boolean_false = False  # Boolean type
+    
+    def display_int_types(self):
+        """Display integer types and their conversions."""
+        print("Decimal Integer:", self.decimal_int)
+        print("Large Integer:", self.large_int)
+        print("Binary Integer (0b1010):", self.binary_int)
+        print("Octal Integer (0o12):", self.octal_int)
+        print("Hexadecimal Integer (0xA):", self.hexadecimal_int)
+    
+    def convert_to_decimal(self):
+        """Convert binary, octal, and hexadecimal to decimal."""
+        print("Binary to Decimal:", int("1010", 2))
+        print("Octal to Decimal:", int("12", 8))
+        print("Hexadecimal to Decimal:", int("A", 16))
+    
+    def display_float_types(self):
+        """Display float values and scientific notation."""
+        print("Float Number:", self.float_num)
+        print("Scientific Notation:", self.scientific_notation)
+    
+    def display_string_data(self):
+        """Display string data and its operations."""
+        print("String:", self.string_data)
+        print("Upper Case:", self.string_data.upper())
+        print("Lower Case:", self.string_data.lower())
+        print("String Length:", len(self.string_data))
+    
+    def display_boolean_values(self):
+        """Display boolean values and their numeric representation."""
+        print("Boolean True:", self.boolean_true)
+        print("Boolean False:", self.boolean_false)
+        print("Boolean as Integer:", int(self.boolean_true), int(self.boolean_false))
+
+# Create object of the class
+data_obj = DataTypesDemo()
+
+data_obj.display_int_types()
+data_obj.convert_to_decimal()
+data_obj.display_float_types()
+data_obj.display_string_data()
+data_obj.display_boolean_values()
